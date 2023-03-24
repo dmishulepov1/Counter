@@ -8,9 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBAction func button(_ sender: UIButton) {
+        score += 1
+        scoreLabel.text = "\(score)"
+    }
+    private var score = 0
+    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
+        scoreLabel.text = "\(score)"
         // Do any additional setup after loading the view.
     }
 
