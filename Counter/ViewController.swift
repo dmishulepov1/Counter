@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBAction func button(_ sender: UIButton) {
         score += 1
-        scoreLabel.text = "\(score)"
+        scoreLabel.text = "Значение счетчика \(score)"
     }
     private var score = 0
     
